@@ -1,5 +1,107 @@
-hjefwhjeghjh
-hkefjdsjljasjkljvhk
-<head>
-    jkds
-</head>gitgggggggghhhhhhhhhh
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Spletna stran</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="favicon.ico" rel="shortcut icon">
+  </head>
+
+  <body>
+    <h1>Osnove izdelave spletne strani</h1>
+
+    <div class="razdelek">
+      <h2>Priprava spletne strani</h2>
+
+      <p>
+        Za pripravo spletne strani je dobro poznati osnove
+      </p>
+      <ul>
+        <li>jezika HTML,</li>
+        <li>jezika CSS,</li>
+        <li>jezika JavaScript.</li>
+      </ul>
+
+      <p>
+        Gradiva in vodičev je na spletu ogromno.
+        Za hitro ponovitev ali uvod si lahko na primer ogledate posnetke v YouTube kanalu
+        <a href="https://www.youtube.com/playlist?list=PLo3w8EB99pqLEopnunz-dOOBJ8t-Wgt2g">Web Demystified</a>.
+      </p>
+
+      <p>
+        Pri pripravi datotek si lahko pomagamo z urejevalnikom <a href="https://code.visualstudio.com/docs/languages/html">Visual Studio Code</a>.
+        Za predogled nastajajoče spletne strani uporabimo paket <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server</a> ali <a href="https://marketplace.visualstudio.com/items?itemName=tht13.html-preview-vscode">HTML Preview</a>.
+      </p>
+
+    </div>
+
+    <div class="razdelek">
+      <h2>Objava spletne strani</h2>
+
+      <p>
+        Spletno stran lahko objavimo s pomočjo različnih ponudnikov spletnega gostovanja.
+        Eden takih je <a href="https://www.netlify.com/">Netlify</a>, ki omogoča, da spletno stran naložimo tudi
+        preko javnega Git repozitorija, na primer <a href="https://github.com/">GitHub</a>.
+      </p>
+
+      <p>
+        Ta spletna stran je objavljena na naslovu <a href="https://pop-stran.netlify.app/">https://pop-stran.netlify.app/</a>.
+      </p>
+    </div>
+
+    <div class="razdelek">
+      <h2>Vključevanje skriptnih datotek</h2>
+
+      <p>
+        Za dodajanje interaktivnih elementov na spletno stran se uporablja programski jezik JavaScript. Kodo, napisano v tem jeziku,
+        vključujemo v spletno stran oziroma <code>html</code> dokument s pomočjo značke <code>&lt;script&gt;</code>.
+      </p>
+      <p>
+        Na primer dodamo lahko "vljuden" gumb.
+        <button onclick="klik()">Klikni me</button>
+        <label id="po-kliku"></label>
+      </p>
+
+      <p>
+        Vključimo lahko tudi zunanje skripte. Z uporabo <a href="https://www.mathjax.org/">MathJax</a> lahko v besedilo na primer dodamo $\LaTeX$ formule:
+        $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+      </p>
+      
+    </div>
+
+    <div class="razdelek">
+      <h2>Vključevanje zunanjih vsebin</h2>
+
+      <p>
+        Na spletno stran lahko vključimo tudi vsebine, ki se nahajajo na drugih spletnih naslovih.
+        To omogoča značka <code>&lt;iframe&gt;</code>.
+      </p>
+      <p>Primer je vključitev ankete, pripravljene s pomočjo <a href=https://docs.google.com/forms>Google obrazcev</a>.</p>
+
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdQGEZ__aTdJ0zBARe-_oq3B0B20bqdj0Y9o0aZJqbEsRKsPA/viewform?embedded=true" width="900" height="650" frameborder="0" marginheight="0" marginwidth="0">Nalaganje …</iframe>
+    </div>
+
+    <footer>
+      Spletna stran je bila pripravljena v okviru predavanj Programska oprema pri pouku (FMF, UNI-LJ) aprila 2021.
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        svg: {
+          fontCache: 'global'
+        }
+      };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script>
+
+  </body>
+
+</html>
